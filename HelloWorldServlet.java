@@ -43,7 +43,10 @@ public class HelloWorldServlet extends HttpServlet {
 
             ByteArrayOutputStream os = new ByteArrayOutputStream();
 
-            WordCloudGenerator.generateWordMap(queryResultFiltered, os );
+            String relativeWebPath = "WEB-INF/classes/backgrounds/dark-pink-heart.png";
+            InputStream imageTemplate = getServletContext().getResourceAsStream(relativeWebPath);
+
+            WordCloudGenerator.generateWordMap(imageTemplate,queryResultFiltered, os );
             imageBase64 = Base64.getEncoder().encodeToString(os.toByteArray());
 
         } catch (Exception e) {
@@ -65,7 +68,7 @@ public class HelloWorldServlet extends HttpServlet {
                 "9TXL0Y4OHwAAAABJRU5ErkJggg==\" alt=\"Red dot\" />" +
 
                 "<img src=\"data:image/png;base64," + imageBase64 +
-                " alt=\"Red dot\" />" +
+                " \"alt=\"Red dot\" />" +
                 "</body></html>");
 
 

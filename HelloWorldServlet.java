@@ -43,7 +43,7 @@ public class HelloWorldServlet extends HttpServlet {
 
             ByteArrayOutputStream os = new ByteArrayOutputStream();
 
-            String relativeWebPath = "WEB-INF/classes/backgrounds/dark-pink-heart.png";
+            String relativeWebPath = "WEB-INF/classes/backgrounds/cloud_fg.bmp";
             InputStream imageTemplate = getServletContext().getResourceAsStream(relativeWebPath);
 
             WordCloudGenerator.generateWordMap(imageTemplate,queryResultFiltered, os );

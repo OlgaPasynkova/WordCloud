@@ -19,6 +19,8 @@ public class GoogleQuery {
                 BufferedReader br = new BufferedReader(new InputStreamReader(
                         (conn.getInputStream())));
 
+
+
                 System.out.println(url);
                 //conn.disconnect();
                 return br;

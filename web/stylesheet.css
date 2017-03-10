@@ -1,0 +1,150 @@
+﻿body {
+	margin: 0px;
+	padding: 8px;
+	
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "sans serif";
+	font-size: medium;
+	color: #555555;
+	background-color: #f2f1f0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a {
+	color: inherit;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+
+tr.zweitezeile {
+	background-color: #f2f1f0;
+}
+
+a:link {
+	color: inherit;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: inherit;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+a:active {
+	color: inherit;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+#container {
+	width: inherit;
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+}
+
+#kopfleiste {
+	width: inherit;
+	height: 80px;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 0px 15px;
+	overflow: hidden;
+	
+	background-color: #1d0551;
+	-moz-box-shadow: 2px 2px 2px 0px #515151;
+	-webkit-box-shadow: 2px 2px 2px 0px #515151;
+	box-shadow: 2px 2px 2px 0px #515151;
+}
+
+#kopfleiste h1 {
+	margin: 0px;
+	padding: 0px;
+	
+	font-size: 220%;
+	line-height: 80px;
+	color: #FAF9F8;
+}
+
+#menu {
+	width: inherit;
+	height: 40px;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 0px 15px;
+	overflow: hidden;
+	
+	background-color: #FAF9F8;
+	-moz-box-shadow: 2px 2px 2px 0px #515151;
+	-webkit-box-shadow: 2px 2px 2px 0px #515151;
+	box-shadow: 2px 2px 2px 0px #515151;
+}
+
+#menu a:hover {
+	background-color: #f2f1f0;
+}
+
+#menu tr {
+	padding: 0px;
+	
+	list-style-type: none;
+}
+
+#menu td {
+	margin: 0px 0px 15px 0px;
+	padding: 10px 10px 10px 10px;
+
+	font-size: 100%;
+}
+
+#menu td.current {
+	font-weight: bold;
+
+
+}
+
+#inhalt {
+	width: auto;
+	height: auto;
+	/*overflow: hidden; /*Damit das Layout mit float funktioniert*/
+	padding: 10px 15px 10px 15px;
+	
+	background-color: #FAF9F8;
+	-moz-box-shadow: 2px 2px 2px 0px #515151;
+	-webkit-box-shadow: 2px 2px 2px 0px #515151;
+	box-shadow: 2px 2px 2px 0px #515151;
+}
+
+#inhalt a {
+	color: inherit;
+	font: inherit;
+	text-decoration: underline;
+}
+
+#inhalt h2 {
+	text-align: center;
+	font-size: 100%;
+	line-height: 1.4;
+}
+
+#inhalt p, form {
+	font-size: 90%;
+	line-height: 1.3;
+}
+#inhalt li {
+	font-size: 90%;
+	line-height: 2;
+}

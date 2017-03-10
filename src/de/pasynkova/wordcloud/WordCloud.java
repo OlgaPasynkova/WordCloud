@@ -42,7 +42,8 @@ public class WordCloud extends HttpServlet {
 
     } */
 
-    public void doGet(String[] args,HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //public void doGet(String[] args,HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
 
         BufferedReader queryResult = null;
@@ -52,10 +53,11 @@ public class WordCloud extends HttpServlet {
         String title = "Words Cloud";
         String wordsForCloud = null;
         String errorMessage = "No error";
+        /*
         try {
             wordsForCloud = request.getParameter("words_for_map").replaceAll(" * ", "+");
            //System.out.println(wordsForCloud);
-            if (!wordsForCloud.equals(null)) {
+            /*if (!wordsForCloud.equals(null)) {
                 queryResult = GoogleQuery.search(args[0], args[1], wordsForCloud);
             }
 
@@ -64,9 +66,11 @@ public class WordCloud extends HttpServlet {
             WordCloudGenerator.generateWordMap(queryResultFiltered);
 
 
+
         } catch (Exception e) {
             errorMessage = e.getMessage() + e.getStackTrace();
         }
+        */
 
         String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " +
                 "transitional//en\">\n";
@@ -78,7 +82,10 @@ public class WordCloud extends HttpServlet {
                 "  <b>Words</b>: "
                 + request.getParameter("words_for_map") + "\n" +
                 "<p>" + errorMessage +"</p>" +
-                "<img src=\"d:/downloads/whale_wordcloud1.png\"" +
+                "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA\n" +
+                "AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO\n" +
+                "9TXL0Y4OHwAAAABJRU5ErkJggg==\" alt=\"Red dot\" />" +
+
                 "</body></html>");
 
 

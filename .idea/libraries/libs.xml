@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="file://D:/Downloads/google-http-client-assembly-1.22.0-1.22.0/google-http-java-client/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/Downloads/google-http-client-assembly-1.22.0-1.22.0/google-http-java-client/libs" />
+    </SOURCES>
+    <jarDirectory url="file://D:/Downloads/google-http-client-assembly-1.22.0-1.22.0/google-http-java-client/libs" recursive="false" />
+    <jarDirectory url="file://D:/Downloads/google-http-client-assembly-1.22.0-1.22.0/google-http-java-client/libs" recursive="false" type="SOURCES" />
+  </library>
+</component>
